@@ -27,6 +27,8 @@ class AppComponentState extends State<AppComponent> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        splashColor: Colors.transparent, // 点击时的高亮效果设置为透明
+        highlightColor: Colors.transparent, // 长按时的扩散效果设置为透明
       ),
       onGenerateRoute: Application.router.generator,
     );
