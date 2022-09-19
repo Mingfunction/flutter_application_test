@@ -16,7 +16,7 @@ class _MyPageState extends State<MyPage> {
   void initState() {
     super.initState();
     _controller.addListener(() {
-      // print(_controller.offset);
+      print(_controller.offset);
       setState(() {
         if (_controller.offset > 255) {
           _titleAlpha = 255;
