@@ -26,6 +26,9 @@ dependencies:
   fluro: ^2.0.3
   # 下面将Cupertino图标字体添加到应用程序中。
   cupertino_icons: ^1.0.2
+  easy_refresh: ^3.0.4+2
+  flutter_easyrefresh: ^2.2.2
+  carousel_slider: ^4.1.1
 
 dev_dependencies:
   flutter_test:

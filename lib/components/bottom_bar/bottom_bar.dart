@@ -21,11 +21,11 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   // 底部导航的每一项
   Widget tabbarItem(int index) {
-    Color iconColor = Colors.black;
+    Color? iconColor = Colors.black;
     TextStyle style = const TextStyle(fontSize: 12, color: Colors.black);
     if (index == widget.currentIndex) {
-      iconColor = Colors.amber;
-      style = const TextStyle(fontSize: 12, color: Colors.amber);
+      iconColor = const Color.fromARGB(255, 99, 255, 180);
+      style = const TextStyle(fontSize: 12, color: Color.fromARGB(255, 99, 255, 180));
     }
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
@@ -47,6 +47,7 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
+      elevation: 0.0,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
@@ -70,7 +71,7 @@ class BarCenterButton extends StatelessWidget {
       width: 65,
       height: 65,
       padding: const EdgeInsets.all(4),
-      margin: const EdgeInsets.fromLTRB(0, 50, 0, 0),
+      margin: const EdgeInsets.fromLTRB(0, 45, 0, 0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(35),
         color: Colors.white,

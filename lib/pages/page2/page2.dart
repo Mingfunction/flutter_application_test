@@ -48,7 +48,7 @@ class _Page2State extends State<Page2> {
             expandedHeight: 250.0,
             flexibleSpace: FlexibleSpaceBar(
               title: Text('Demo', style: TextStyle(color: Colors.black.withAlpha(_titleAlpha))),
-              centerTitle: true,
+              centerTitle: false,
               background: Image.asset(
                 "asset/images/test2.webp",
                 fit: BoxFit.cover,
